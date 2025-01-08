@@ -12,6 +12,9 @@ public class Order {
         menuItems.add(item);
         totalAmount += item.getPrice();
     }
+    public double getTotalAmount() {
+        return totalAmount;
+    }
     public void displayOrder() {
         System.out.println("Order ID: " + orderId);
         for (MenuItem item : menuItems) {
