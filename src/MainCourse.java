@@ -4,7 +4,13 @@ public class MainCourse extends MenuItem {
     }
 
     @Override
+    public void displayItem() {
+        System.out.println(toString());
+    }
+
+    @Override
     public String toString() {
         return "Main Course: " + getName() + ", Price: " + getPrice();
     }
 }
+

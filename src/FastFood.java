@@ -4,8 +4,12 @@ public class FastFood extends MenuItem {
     }
 
     @Override
+    public void displayItem() {
+        System.out.println(toString());
+    }
+
+    @Override
     public String toString() {
         return "Fast Food: " + getName() + ", Price: " + getPrice();
     }
 }
-
